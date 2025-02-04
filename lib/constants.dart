@@ -4,11 +4,11 @@ import 'package:path/path.dart' as path;
 
 /// Relative path to android resource folder
 String androidResFolder(String? flavor) =>
-    "android/app/src/${flavor ?? 'main'}/res/";
+    ".android/app/src/${flavor ?? 'main'}/res/";
 
 /// Relative path to android colors.xml file
 String androidColorsFile(String? flavor) =>
-    "android/app/src/${flavor ?? 'main'}/res/values/colors.xml";
+    ".android/app/src/${flavor ?? 'main'}/res/values/colors.xml";
 
 const String androidManifestFile = '.android/app/src/main/AndroidManifest.xml';
 const String androidGradleFile = '.android/app/build.gradle';
