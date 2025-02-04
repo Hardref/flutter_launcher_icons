@@ -10,9 +10,9 @@ String androidResFolder(String? flavor) =>
 String androidColorsFile(String? flavor) =>
     "android/app/src/${flavor ?? 'main'}/res/values/colors.xml";
 
-const String androidManifestFile = 'android/app/src/main/AndroidManifest.xml';
-const String androidGradleFile = 'android/app/build.gradle';
-const String androidLocalPropertiesFile = 'android/local.properties';
+const String androidManifestFile = '.android/app/src/main/AndroidManifest.xml';
+const String androidGradleFile = '.android/app/build.gradle';
+const String androidLocalPropertiesFile = '.android/local.properties';
 
 /// Relative path to flutter.gradle from flutter sdk path
 const String androidFlutterGardlePath =
@@ -30,9 +30,9 @@ String androidAdaptiveXmlFolder(String? flavor) =>
 const String androidDefaultIconName = 'ic_launcher';
 
 const String iosDefaultIconFolder =
-    'ios/Runner/Assets.xcassets/AppIcon.appiconset/';
-const String iosAssetFolder = 'ios/Runner/Assets.xcassets/';
-const String iosConfigFile = 'ios/Runner.xcodeproj/project.pbxproj';
+    '.ios/Runner/Assets.xcassets/AppIcon.appiconset/';
+const String iosAssetFolder = '.ios/Runner/Assets.xcassets/';
+const String iosConfigFile = '.ios/Runner.xcodeproj/project.pbxproj';
 const String iosDefaultIconName = 'Icon-App';
 
 // web
