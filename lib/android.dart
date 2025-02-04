@@ -238,7 +238,8 @@ void updateColorsXmlFile(String backgroundConfig, String? flavor) {
     utils.printStatus(
       'Creating colors.xml file and adding it to your Android project',
     );
-    createNewColorsFile(backgroundConfig, flavor);
+    return;
+    // createNewColorsFile(backgroundConfig, flavor);
   }
 }
 

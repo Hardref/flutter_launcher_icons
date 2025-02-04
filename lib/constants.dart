@@ -26,7 +26,7 @@ const String androidAdaptiveForegroundFileName = 'ic_launcher_foreground.png';
 const String androidAdaptiveBackgroundFileName = 'ic_launcher_background.png';
 const String androidAdaptiveMonochromeFileName = 'ic_launcher_monochrome.png';
 String androidAdaptiveXmlFolder(String? flavor) =>
-    androidResFolder(flavor) + 'mipmap-anydpi-v26/';
+    androidResFolder(flavor) + 'mipmap-hdpi/';
 const String androidDefaultIconName = 'ic_launcher';
 
 const String iosDefaultIconFolder =
