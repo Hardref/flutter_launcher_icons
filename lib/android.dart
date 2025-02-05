@@ -50,14 +50,14 @@ void createDefaultIcons(
   }
   final File androidManifestFile = File(constants.androidManifestFile);
   if (config.isCustomAndroidFile) {
-    utils.printStatus('Adding a new Android launcher icon');
-    final String iconName = config.android;
-    isAndroidIconNameCorrectFormat(iconName);
-    final String iconPath = '$iconName.png';
-    for (AndroidIconTemplate template in androidIcons) {
-      _saveNewImages(template, image, iconPath, flavor);
-    }
-    overwriteAndroidManifestWithNewLauncherIcon(iconName, androidManifestFile);
+    // utils.printStatus('Adding a new Android launcher icon');
+    // final String iconName = config.android;
+    // isAndroidIconNameCorrectFormat(iconName);
+    // final String iconPath = '$iconName.png';
+    // for (AndroidIconTemplate template in androidIcons) {
+    //   _saveNewImages(template, image, iconPath, flavor);
+    // }
+    // overwriteAndroidManifestWithNewLauncherIcon(iconName, androidManifestFile);
   } else {
     utils.printStatus(
       'Overwriting the default Android launcher icon with a new icon',
@@ -317,10 +317,7 @@ void overwriteExistingIcons(
 ) {
   final Image newFile = utils.createResizedImage(template.size, image);
   File(
-    constants.androidResFolder(flavor) +
-        template.directoryName +
-        '/' +
-        filename,
+    constants.androidResFolder(flavor) + 'mipmap-hdpi/' + filename,
   ).create(recursive: true).then((File file) {
     file.writeAsBytesSync(encodePng(newFile));
   });
